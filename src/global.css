@@ -53,3 +53,81 @@ button {
 .buttonComponent:active:hover {
     background-color: #ffce22;
 }
+
+.checkboxComponent {
+    all: unset;
+    width: 25px;
+    height: 25px;
+}
+
+.checkboxComponent:before {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    content: '';
+    background: #fff;
+}
+
+.checkboxComponent:after {
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    display: block;
+    left: 3px;
+    top: -20px;
+    width: 18px;
+    height: 9px;
+    content: '';
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 0 1px 1px;
+}
+
+.checkboxComponent:hover:before {
+    border-color: #bdbdbd;
+}
+
+.checkboxComponent:not(:disabled):hover:before {
+    border-color: #bdbdbd;
+}
+
+.checkboxComponent:not(:disabled):hover:after {
+    border-color: #e3e3e3;
+}
+
+.checkboxComponent:not(:disabled):active:hover:before {
+    border-color: #bdbdbd;
+}
+.checkboxComponent:not(:disabled):active:hover:after {
+    border-color: #878787;
+}
+.checkboxComponent:not(:disabled):active:before {
+    border-color: #bdbdbd;
+    outline: 3px solid #2469f61a;
+}
+
+.checkboxComponent:checked:before {
+    border-color: #2469f6;
+    background: #2469f6;
+}
+.checkboxComponent:checked:after {
+    border-color: #fff;
+}
+.checkboxComponent:checked:hover:before {
+    border-color: #5087f8;
+    background: #5087f8;
+}
+.checkboxComponent:checked:hover:after {
+    border-color: #fff;
+}
+.checkboxComponent:checked:active:hover:before {
+    border-color: #2469f6;
+    background: #2469f6;
+}
+.checkboxComponent:checked:active:hover:after {
+    border-color: #fff;
+}
