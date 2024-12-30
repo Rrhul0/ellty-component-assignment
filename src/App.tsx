@@ -1,7 +1,11 @@
-import './App.css'
+import Button from './components/atoms/Button'
 
 function App() {
-    return <></>
+    return (
+        <div>
+            <Button>Done</Button>
+        </div>
+    )
 }
 
 export default App
