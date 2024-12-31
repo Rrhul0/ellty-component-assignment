@@ -131,3 +131,18 @@ button {
 .checkboxComponent:checked:active:hover:after {
     border-color: #fff;
 }
+
+.checkboxOptionComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px 8px 20px;
+    gap: 10px;
+    width: 370px;
+    height: 42px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #cdcdcd;
+}
