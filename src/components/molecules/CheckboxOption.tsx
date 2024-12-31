@@ -1,10 +1,15 @@
 import CheckBox from '../atoms/CheckBox'
 
-const CheckboxOption = ({ label }: { label: string }) => {
+type CheckboxInputType = React.ComponentPropsWithRef<typeof CheckBox>
+
+const CheckboxOption = ({
+    label,
+    ...props
+}: { label: string } & CheckboxInputType) => {
     return (
         <label className='checkboxOptionComponent'>
             <span>{label}</span>
-            <CheckBox />
+            <CheckBox {...props} />
         </label>
     )
 }

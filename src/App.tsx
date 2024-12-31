@@ -1,13 +1,9 @@
-import Button from './components/atoms/Button'
-import CheckBox from './components/atoms/CheckBox'
-import CheckboxOption from './components/molecules/CheckboxOption'
+import Menu from './components/organisms/Menu'
 
 function App() {
     return (
         <div>
-            <Button>Done</Button>
-            <CheckBox />
-            <CheckboxOption label='Option 1' />
+            <Menu />
         </div>
     )
 }

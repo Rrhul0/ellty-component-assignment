@@ -146,3 +146,17 @@ button {
     height: 1px;
     background-color: #cdcdcd;
 }
+
+.menu {
+    width: fit-content;
+    box-shadow: 0px 0px 4px rgba(20, 20, 20, 0.1),
+        0px 8px 15px rgba(20, 20, 20, 0.12);
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    padding-block: 10px;
+}
+
+.wrapper {
+    width: 370px;
+    padding: 10px 15px;
+}

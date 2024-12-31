@@ -1,11 +1,6 @@
 import React from 'react'
 
-const CheckBox = (
-    props: React.DetailedHTMLProps<
-        React.InputHTMLAttributes<HTMLInputElement>,
-        HTMLInputElement
-    >
-) => {
+const CheckBox = (props: React.HTMLProps<HTMLInputElement>) => {
     return (
         <input
             type='checkbox'
